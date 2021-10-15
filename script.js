@@ -1,5 +1,6 @@
 'use strict';
-let rndNum = Math.floor(Math.random() * (20 - 1 + 1)) + 1;
+//let rndNum = Math.floor(Math.random() * (20 - 1 + 1)) + 1;
+let rndNum = Math.trunc(Math.random() * 20) + 1;
 
 const scoreObj = document.querySelector('.score');
 
