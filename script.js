@@ -19,6 +19,7 @@ document.querySelector('.check').addEventListener('click', function () {
     else    //if guessed number is correct
     {
         document.querySelector('.message').innerText = '🥂Congrats!';
+        document.querySelector('body').style.backgroundColor = 'green';
 
         if ((document.querySelector('.highscore').innerText) < Number(scoreObj.innerText))
             document.querySelector('.highscore').innerText = Number(scoreObj.innerText);
@@ -26,6 +27,7 @@ document.querySelector('.check').addEventListener('click', function () {
 });
 
 document.querySelector('.again').addEventListener('click', function () {
+    document.querySelector('body').style.backgroundColor = 'black';
     scoreObj.innerText = 20;
     document.querySelector('.guess').value = '';
     rndNum = Math.floor(Math.random() * (20 - 1 + 1)) + 1;
